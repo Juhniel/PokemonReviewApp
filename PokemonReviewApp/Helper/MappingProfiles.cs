@@ -8,12 +8,12 @@ namespace PokemonReviewApp.Helper
     {
         public MappingProfiles()
         {
-            CreateMap<Pokemon, PokemonDto>();
-            CreateMap<Category, CategoryDto>();
-            CreateMap<Country, CountryDto>();
-            CreateMap<Review, ReviewDto>();
-            CreateMap<Reviewer, ReviewerDto>();
-            CreateMap<Owner, OwnerDto>();
+            CreateMap<Pokemon, PokemonDto>().ReverseMap();
+            CreateMap<Category, CategoryDto>().ReverseMap();
+            CreateMap<Country, CountryDto>().ReverseMap();
+            CreateMap<Review, ReviewDto>().ReverseMap();
+            CreateMap<Reviewer, ReviewerDto>().ReverseMap();
+            CreateMap<Owner, OwnerDto>().ReverseMap();
         }
     }
 }
