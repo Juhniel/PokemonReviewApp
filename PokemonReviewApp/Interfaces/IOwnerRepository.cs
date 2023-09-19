@@ -1,4 +1,5 @@
-﻿using PokemonReviewApp.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using PokemonReviewApp.Models;
 
 namespace PokemonReviewApp.Interfaces
 {
@@ -11,6 +12,7 @@ namespace PokemonReviewApp.Interfaces
         bool OwnerExists(int ownerId);
         bool CreateOwner(Owner owner);
         bool UpdateOwner(Owner owner);
+        bool DeleteOwner(Owner owner);
         bool Save();
 
     }
